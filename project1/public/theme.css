@@ -1,0 +1,160 @@
+:root {
+    --header-bg-color: #F06C9B;
+    --footer-bg-color: #F06C9B;
+    --header-text-color: floralwhite;
+    --header-menu-bg-color: #ff7070;
+    --header-menu-text-color: #6e627f;
+}
+
+html, body {
+    height: 100%;
+    margin: 0 0.2rem;
+}
+
+body{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    color: var(--header-text-color);
+    background-color: var(--header-bg-color);
+}
+
+.header__banner {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.title-logo {
+    display: flex;
+    align-content: center;
+    justify-self: start;
+}
+
+.header__logo-pic {
+    height: 50px;
+    vertical-align: bottom;
+}
+
+.header__site-title {
+    align-self: center;
+    justify-self: center;
+
+    margin: 0;
+
+    font-family: Charm,serif;
+}
+
+.header__menu {
+    grid-column: span 12;
+}
+
+.header__main-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.header__main-menu-title {
+    border: none;
+    padding: 1rem;
+
+    background-color: inherit;
+    color: var(--header-text-color);
+
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.header__main-menu-item:hover .header__submenu,
+.header__main-menu-item:focus-within .header__submenu {
+    height: auto;
+}
+
+.header__submenu {
+    position: absolute;
+    list-style-type: none;
+
+    margin: 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 0;
+
+    background-color: var(--header-bg-color);
+
+    overflow: hidden;
+    line-height: 2rem;
+
+}
+
+.header__submenu-link{
+    padding-bottom: 0.1rem;
+
+    color: var(--header-text-color);
+
+    text-decoration-line: none;
+}
+
+.header__submenu-link:hover,
+.header__submenu-link:focus-within{
+    border-bottom: 1px solid white;
+}
+
+.main{
+    margin-bottom: 1rem;
+}
+
+.main__title{
+    display: flex;
+    justify-content: center;
+
+    color: var(--header-bg-color);
+}
+.main__section-title{
+    display: flex;
+    justify-content: center;
+
+    border-top: 1px solid gainsboro;
+    border-bottom: 1px solid gainsboro;
+    padding: 1rem;
+    margin: 1rem;
+}
+.footer {
+    padding: 1rem;
+
+    color: var(--header-text-color);
+    background-color: var(--footer-bg-color);
+}
+.footer__link{
+    color: var(--header-text-color);;
+}
+
+@media (min-width: 40rem) {
+    .header__logo-pic {
+        height: 100px;
+    }
+
+    .header__site-title {
+        font-size: 2.5rem;
+    }
+
+    .header__banner {
+        grid-column: span 10;
+    }
+
+    .header__menu {
+        grid-column: span 2;
+        align-self: center;
+    }
+}

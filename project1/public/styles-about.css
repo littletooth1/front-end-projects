@@ -1,0 +1,36 @@
+.main__section {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    margin: 1rem;
+}
+
+.main__section-title {
+    grid-column: span 12;
+}
+
+.section__photo {
+    grid-column: span 12;
+    justify-self: center;
+    align-self: flex-start;
+
+    width: 100%;
+    margin: 1rem;
+}
+
+.section__content {
+    grid-column: span 12;
+
+    padding: 0 1rem;
+}
+
+
+@media (min-width: 40rem) {
+    .section__photo {
+        grid-column: span 4;
+    }
+
+    .section__content {
+        grid-column: span 8;
+    }
+}

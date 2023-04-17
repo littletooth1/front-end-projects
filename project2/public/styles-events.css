@@ -1,0 +1,135 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    padding: 0.5rem;
+}
+
+.section-title {
+    width: 100%;
+    padding: 0.5rem;
+
+    background-color: papayawhip;
+
+    text-align: center;
+}
+
+.accordion {
+    width: 95%;
+    border-radius: 12px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+
+    background-color: #FFFFDB;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+
+    width: 100%;
+    margin: 0;
+    padding: 0.5rem;
+    border: none;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+
+    background-color: transparent;
+
+    font-size: 1.2rem;
+}
+
+.accordion-button::after {
+    content: '\2795';
+}
+
+.accordion-button-open {
+    background-color: #EBFAFF;
+
+}
+.accordion-button-open::after {
+    content: '\2796';
+}
+.accordion-text {
+    display: none;
+
+    padding: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.accordion-button-open + .accordion-text {
+    display: block;
+
+    background-color: #EBFAFF;
+}
+.accordion-section + .accordion-section > .accordion-button {
+    border-top: none;
+}
+.action-message {
+    padding: 1rem;
+}
+.count-button{
+    border: none;
+    border-radius: 15px;
+    padding: 1rem;
+
+    background-color: #ff7070;
+    color: white;
+
+    font-size: 1.2rem;
+}
+
+@media (min-width: 44rem){
+    .accordion {
+        width: 70%;
+        max-width: 40rem;
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+
+    .accordion-button {
+        transition-property: background-color;
+        transition-delay: 0.05s;
+        transition-duration: 0.25s;
+    }
+
+    .accordion-button:hover {
+        background-color: #EBFAFF;
+    }
+
+    .count-increase {
+        display: none;
+    }
+
+    .count-increase-show {
+        display: initial;
+
+        animation: changeColor 0.5s ease-in-out;
+
+        padding: 0.5rem;
+
+        color: transparent;
+    }
+
+
+    @keyframes changeColor {
+        from {
+            color: transparent;
+        }
+
+        50% {
+            color: red;
+            scale: 1.5;
+        }
+
+        to {
+            color: transparent;
+        }
+    }
+}
+

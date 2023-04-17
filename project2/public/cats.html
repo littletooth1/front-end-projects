@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="styles-cats.css"/>
+    <link rel="stylesheet" href="theme.css"/>
+    <script defer src="dropdown-menu.js"></script>
+    <script defer src="modal-form.js"></script>
+    <title>Cats</title>
+</head>
+<body>
+<header class="header">
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="page-title">
+        <a href="index.html"><img class="title-logo" src="images/logo.jpeg" alt=""/></a>
+        <h1 class="title-text">Cats Power the Internet</h1>
+    </div>
+    <nav class="dropdown-menu">
+        <button type="button" class="dropdown-button"><i class="gg-menu"></i></button>
+        <ul class="header-menu">
+            <li class="header-menu-item"><a class="header-menu-link" href="index.html">Home</a></li>
+            <li class="header-menu-item"><a class="header-menu-link" href="cats.html">Famous Cats</a></li>
+            <li class="header-menu-item"><a class="header-menu-link" href="events.html">Cat Events</a></li>
+        </ul>
+    </nav>
+</header>
+<main class="main" id="main">
+    <div class="cards">
+        <div class="card">
+            <h2 class="card-title">Soft Kitty</h2>
+            <img class="card-picture" src="images/card1.jpeg" alt="A cat seeing through a door."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button" type="button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Warm Kitty</h2>
+            <img class="card-picture" src="images/card2.jpeg" alt="A kitten holding by one hand."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Little Ball of Fur</h2>
+            <img class="card-picture" src="images/card3.jpeg" alt="A kitten sniffing the ground."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <p>Consequuntur dolore dolorem error ipsam soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Happy Kitty</h2>
+            <img class="card-picture" src="images/card4.jpeg" alt="A kitten tilting its head."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Sleepy Kitty</h2>
+            <img class="card-picture" src="images/card5.jpeg" alt="A cat siting in a cat climbing frame."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+        <div class="card">
+            <h2 class="card-title">Pur Pur Pur</h2>
+            <img class="card-picture" src="images/card6.jpeg" alt="A cat observing the environment."/>
+            <div class="card-text">
+                <p>Consequuntur dolore dolorem error ipsam laudantium molestias soluta tenetur voluptatum!</p>
+                <span>Lorem ipsum </span>
+                <button class="subscribe-button">Subscribe</button>
+                <span>elit. Cum, unde?</span>
+            </div>
+        </div>
+    </div>
+    <dialog class="modal">
+        <h2>Subscribe to the Latest Mews!</h2>
+        <form class="form" action="/subscribe" method="post">
+            <div class="field-group">
+                <div>
+                    <label class="field-label" for="email">Email: </label>
+                    <span class="required-mark">* required</span>
+                </div>
+                <input class="field-input" id="email" name="email" type="text"/>
+                <span class="email-error"></span>
+            </div>
+            <div class="field-group">
+                <div>
+                    <label class="field-label" for="confirm-email">Confirm Email: </label>
+                    <span class="required-mark">* required</span>
+                </div>
+                <input class="field-input" id="confirm-email" name="confirm-email" type="text"/>
+                <span class="confirm-error"></span>
+            </div>
+            <div class="button-group">
+                <button class="subscribe" type="submit">Subscribe</button>
+                <button class="cancel-button" type="button">Cancel</button>
+            </div>
+        </form>
+    </dialog>
+</main>
+<footer class="footer">
+    <nav>
+        <ul class="footer-menu">
+            <li class="footer-menu-item"><a href="privacy.html">Privacy Policy</a></li>
+            <li class="footer-menu-item"><a href="career.html">Work for Us</a></li>
+            <li class="footer-menu-item"><a href="contact-us.html">Contact Us</a></li>
+            <li class="footer-menu-item"><a href="social-media.html">Social Media</a></li>
+        </ul>
+    </nav>
+</footer>
+</body>
+</html>

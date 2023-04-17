@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="theme.css">
+    <link rel="stylesheet" href="styles-register.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__banner">
+        <a class="header__logo" href="index.html">
+            <img class="header__logo-pic" src="images/patrizia-berta-OSUIvOh1iaI-unsplash.jpg" alt="" />
+        </a>
+        <h1 class="header__site-title">Fluffy Vogue</h1>
+    </div>
+    <nav class="header__menu">
+        <ul class="header__main-menu">
+            <li class="header__main-menu-item">
+                <button type="button" class="header__main-menu-title">Menu</button>
+                <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="index.html">Homepage</a>
+                    </li>
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="about.html">About</a>
+                    </li>
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="register.html">Registration</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="header__main-menu-item">
+                <button type="button" class="header__main-menu-title">Regional Fashion</button>
+                <ul class="header__submenu">
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="seattle.html">Seattle</a>
+                    </li>
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="boston.html">Boston</a>
+                    </li>
+                    <li class="header__submenu-item">
+                        <a class="header__submenu-link" href="sv.html">Silicon Valley</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main">
+    <h2 class="main__title">Registration</h2>
+    <span class="main__message">Leave your name and email to receive newsletter from Fluffy Vogue!</span>
+    <form class="main__form" action="/register" method="post">
+        <label class="form__label" for="name">Name* : </label>
+        <input class="form__input" id="name" name="name" type="text" required/>
+        <label class="form__label" for="email">Email* :</label>
+        <input class="form__input" id="email" name="email" type="email" required/>
+        <span class="form__checkbox">
+            <input class="form__checkbox-box" id="big_fan" name="big_fan" type="checkbox" checked/>
+            <label class="form__checkbox-label" for="big_fan">Yes, I'm a big fan of cats.</label>
+        </span>
+        <label class="form__label" for="frequency">How often do you want to hear from us?* :</label>
+        <select class="form__dropdown" id="frequency" name="frequency" required>
+            <option value="" selected>Please select</option>
+            <option value="1">Daily</option>
+            <option value="2">Weekly</option>
+            <option value="3">Monthly</option>
+            <option value="4">Never</option>
+        </select>
+        <button class="form__button" type="submit">Register</button>
+    </form>
+
+</main>
+<footer class="footer">
+    <a class="footer__link" href="privacy.html">All about privacy</a>
+</footer>
+</body>
+</html>

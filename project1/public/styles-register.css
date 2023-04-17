@@ -1,0 +1,53 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.main__message{
+    padding: 1rem;
+
+    color: darkgrey;
+
+    font-size: 0.9rem;
+    font-style: italic;
+}
+.main__form{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    width: 20rem;
+    margin: 1rem;
+}
+.form__label, .form__input, .form__dropdown {
+    grid-column: span 12;
+}
+
+.form__checkbox {
+    grid-column: span 12;
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+
+.form__checkbox-label {
+    display: flex;
+    align-self: start;
+
+    padding-left: .5rem;
+}
+
+.form__button {
+    grid-column: span 12;
+    justify-self: center;
+
+    padding: 0.5rem 2rem;
+    margin: 1rem 5rem;
+    border: 0;
+    border-radius: 0.5rem;
+
+    background-color: #F06C9B;
+    color: white;
+
+    font-size: 1rem;
+}

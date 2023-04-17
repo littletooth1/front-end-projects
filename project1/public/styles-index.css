@@ -1,0 +1,80 @@
+.main{
+    --left-card-main-color: #00A7E1;
+    --left-card-bg-color:#EBFAFF;
+    --mid-card-main-color: #D435BF;
+    --mid-card-bg-color: #fbecf9;
+    --right-card-main-color: orange;
+    --right-card-bg-color: #FFFFDB;
+}
+
+
+.main__trends-pictures{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 1rem;
+
+    margin: 1rem;
+}
+.trend-pic{
+    grid-column: span 12;
+
+    width: 100%;
+}
+
+.main__cards{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+
+    gap: 1rem;
+    margin: 1rem;
+}
+
+.main__card{
+    grid-column: span 12;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    justify-items: center;
+
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.card__link{
+    align-self: center;
+
+    padding: 0.7rem;
+    border-radius: 0.7rem;
+    margin: 1rem;
+
+    color: white;
+
+    text-decoration-line: none;
+}
+
+#left-card{
+    background-color: var(--left-card-bg-color);
+}
+#left-button{
+    background-color: var(--left-card-main-color);
+}
+#mid-card{
+    background-color: var(--mid-card-bg-color);
+}
+#mid-button{
+    background-color: var(--mid-card-main-color);
+}
+#right-card{
+    background-color: var(--right-card-bg-color);
+}
+#right-button{
+    background-color: var(--right-card-main-color);
+}
+
+@media (min-width: 40rem) {
+    .main__card{
+        grid-column: span 4;
+    }
+    .trend-pic{
+        grid-column: span 4;
+    }
+}

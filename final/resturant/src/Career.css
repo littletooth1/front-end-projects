@@ -1,0 +1,16 @@
+.career-text {
+    margin: 0;
+    text-align: center;
+    font-family: "Canela Deck", serif;
+}
+
+#filter {
+    margin-left: 0.5rem;
+}
+
+.openings {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+    padding-top: 1rem;
+}

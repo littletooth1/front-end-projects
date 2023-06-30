@@ -1,0 +1,36 @@
+.accordion-section {
+    align-self: center;
+
+    width: 100%;
+    border: none;
+    padding: 0.1rem;
+
+}
+
+.accordion-section + .accordion-section {
+    border-top: none;
+}
+
+.accordion-button {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1rem;
+    border: none;
+    width: 100%;
+
+    background-color: var(--theme-color);
+    color: white;
+
+    font-size: 1.1rem;
+}
+
+.accordion-content {
+    border-top: 1px solid gainsboro;
+    padding: 0.5rem 1rem;
+    margin: 0;
+
+    line-height: 1.4;
+
+    background-color: #eeeeee;
+}

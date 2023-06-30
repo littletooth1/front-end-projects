@@ -1,0 +1,33 @@
+
+.card {
+    grid-column: span 12;
+    display: flex;
+
+    border: 1px solid lightgray;
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+
+    background-color: white;
+}
+
+.card-text {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+    padding-right: 0.5rem;
+}
+
+
+
+.card-pic {
+    width: 100px;
+    height: 100px;
+}
+
+@media (min-width: 44rem) {
+
+    .card {
+        grid-column: span 6;
+    }
+
+}

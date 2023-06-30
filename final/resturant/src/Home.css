@@ -1,0 +1,63 @@
+.home {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0.5rem;
+}
+
+.carousel-section {
+    grid-column: span 12;
+}
+
+.events {
+    grid-column: span 12;
+
+    padding-top: 0;
+}
+
+.event-card {
+    text-align: center;
+
+    border: 1px solid var(--theme-color);
+    padding: 0 0.5rem;
+    margin-bottom: 0.5rem;
+
+    font-family: "Canela Deck", serif;
+}
+
+.event-card-title {
+    text-align: center;
+
+    color: var(--theme-color);
+}
+
+.reservation-button {
+    grid-column: span 12;
+
+    border: none;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 1rem;
+
+    background-color: var(--theme-color);
+    color: var(--title-color);;
+
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.success-message{
+    padding: 0.5rem 0;
+}
+
+
+@media (min-width: 44rem) {
+
+    .carousel-section {
+        grid-column: span 8;
+    }
+
+    .events {
+        grid-column: span 4;
+    }
+
+}

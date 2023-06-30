@@ -1,0 +1,36 @@
+.about {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-gap: 1em;
+}
+
+.about-pic {
+    width: 100%;
+    grid-column: span 12;
+}
+
+.about-text {
+    grid-column: span 12;
+}
+
+.about-paragraph {
+    margin-top: 0;
+}
+
+.accordions {
+    display: flex;
+    flex-direction: column;
+    grid-column: span 12;
+
+    padding-top: 1rem;
+}
+
+@media (min-width: 44rem) {
+    .about-pic {
+        grid-column: span 4;
+    }
+
+    .about-text {
+        grid-column: span 8;
+    }
+}

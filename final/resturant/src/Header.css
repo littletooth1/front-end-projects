@@ -1,0 +1,30 @@
+.header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    padding: 0;
+
+    background-color: var(--theme-color);
+    background-image: url("./images/hanxiao-ClAZvNHpCKE-unsplash.jpg");
+}
+
+.header-title {
+    text-align: center;
+
+    margin: 0;
+    padding: 1rem 0;
+
+    color: white;
+
+    font-family: Charm,serif;
+}
+
+@media (min-width: 44rem) {
+
+    .header {
+        display: flex;
+        flex-direction: column;
+    }
+
+}

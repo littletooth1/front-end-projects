@@ -1,0 +1,18 @@
+.main {
+    justify-self: center;
+
+    max-width: 75rem;
+    width: 95%;
+    padding: 1rem;
+}
+
+.main-title {
+    grid-column: span 12;
+    text-align: center;
+
+    margin-top: 0;
+
+    color: var(--theme-color);
+
+    font-family: "Canela Deck", serif;
+}

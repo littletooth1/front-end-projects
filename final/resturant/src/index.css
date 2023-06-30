@@ -1,0 +1,17 @@
+html,body,#root,.app {
+  height: 100%;
+  margin: 0;
+
+  background-color: #fbfff8;
+
+
+  font-family: sans-serif;
+}
+
+:root {
+  --theme-color: #156250;
+  --title-color: white;
+  --select-color: #D435BF;
+  --card-bg-color: #EBFAFF;
+  --card-title-color:  #00A7E1;
+}

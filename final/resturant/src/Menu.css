@@ -1,0 +1,44 @@
+.menu-page {
+    position: relative;
+}
+
+.menu-nav {
+    display: flex;
+
+    justify-content: flex-end;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 2px solid var(--theme-color);
+
+    background-color: #fbfff8;
+}
+
+.page-text {
+    text-align: center;
+    font-family: "Canela Deck",serif;
+}
+
+
+.menu-section-nav {
+    padding: 0.2rem 1rem;
+    margin: 0 1rem;
+
+    color: var(--theme-color);
+
+    text-decoration-line: none;
+}
+
+.menu-section-nav:hover,
+.menu-section-nav:focus {
+    background-color: var(--theme-color);
+    color: white;
+}
+
+.dish-cards {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 1rem;
+}
+

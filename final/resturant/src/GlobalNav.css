@@ -1,0 +1,99 @@
+.main-menu {
+    position: relative;
+
+    height: 100%;
+}
+
+.main-menu-button {
+    height: 100%;
+    width: 100%;
+    border: none;
+    padding: 2rem;
+
+    background-color: inherit;
+    color: var(--title-color);
+
+    cursor: pointer;
+}
+
+.main-menu-bar {
+    position: absolute;
+    display: none;
+    right: 0;
+
+    width: 100%;
+
+    background-color: var(--theme-color);
+
+    z-index:1;
+
+}
+
+.main-menu-dropdown-show {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu-item {
+    margin: 0.5rem;
+    border: 1px solid transparent;
+
+    color: var(--title-color);
+    background-color: var(--theme-color);
+
+    font-size: 1.1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.main-menu-item:hover,
+.main-menu-item:focus {
+    border-bottom: 1px solid var(--title-color);
+}
+
+
+/*below CSS adapted from https://css.gg under the MIT License*/
+
+.gg-menu,
+.gg-menu::after,
+.gg-menu::before {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 20px;
+    height: 2px;
+    border-radius: 3px;
+    background: currentColor
+
+}
+
+.gg-menu::after,
+.gg-menu::before {
+    content: "";
+    position: absolute;
+    top: -6px
+}
+
+.gg-menu::after {
+    top: 6px
+}
+
+/*above CSS adapted from https://css.gg under the MIT License*/
+
+@media (min-width: 44rem) {
+    .main-menu {
+        width: 100%;
+    }
+    .main-menu-button {
+        display: none;
+    }
+
+    .main-menu-bar {
+        position: initial;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}

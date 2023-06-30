@@ -1,0 +1,66 @@
+.modal {
+    width: 20rem;
+    height: 20rem;
+}
+
+.modal::backdrop {
+    background-color: rgba(115, 122, 120, 0.5);
+}
+
+.form {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+}
+
+.form-title {
+    text-align: center;
+
+    padding: 0.5rem 0;
+
+    color: var(--theme-color);
+
+    font-weight: bold;
+}
+
+.form-fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-label-section {
+    padding: 0.5rem 0;
+}
+
+.required-mark {
+    color: gray;
+
+    font-style: italic;
+    font-size: 0.8rem;
+}
+
+.input-error {
+    border: 1px solid red;
+}
+
+.form-error {
+    color: red;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 0.5rem;
+}
+
+.form-button {
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+.book-button {
+    background-color: var(--theme-color);
+    color: var(--title-color);
+}

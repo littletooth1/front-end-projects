@@ -1,0 +1,19 @@
+.footer {
+    padding: 0.5rem;
+
+    background-color: var(--theme-color);
+    color:snow;
+
+    text-align: center;
+    line-height: 1.2;
+    font-size: 0.8rem;
+}
+
+.footer-title {
+    padding: 0.2rem;
+
+    color: var(--title-color);
+
+    font-size: 1.2rem;
+    font-family: Charm,serif;
+}
